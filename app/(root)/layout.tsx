@@ -1,9 +1,9 @@
 import Navbar from "../components/Navbar";
-import '../../styles/globals.css';
+//import '../../styles/globals.css';
 
 export default function Layout({ children }: Readonly<{ children: React.ReactNode }>){
   return (
-    <main className="app">
+    <main className="">
       <Navbar />
       {children}
       </main>
