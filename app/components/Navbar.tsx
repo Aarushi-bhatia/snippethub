@@ -17,7 +17,7 @@ const Navbar = async () => {
         height={30}
         className="object-contain"
       />
-      <p className="logo_text">SnippetHub</p>
+      <p className="max-sm:hidden font-satoshi font-semibold text-lg text-black tracking-wide">SnippetHub</p>
     </Link>
 
     <div className='md:flex hidden'>
