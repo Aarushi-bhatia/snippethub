@@ -24,7 +24,7 @@ const Navbar = async () => {
       {session && session?.user ? (
         <>
         <div className="flex gap-3 md:gap-5">
-        <Link href="/create-snippet" className="black_btn">
+        <Link href="/create-snippet" className="rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center">
               Create Post
             </Link>
 
@@ -33,7 +33,7 @@ const Navbar = async () => {
 
             await signOut({ redirectTo: "/" });
             }}>
-              <button type='submit' className='outline_btn'>Logout</button>
+              <button type='submit' className='rounded-full border border-black bg-transparent py-1.5 px-5 text-black transition-all hover:bg-black hover:text-white text-center text-sm font-inter flex items-center justify-center'>Logout</button>
             </form>
 
             <Link href={`/user/${session?.user.id}`}>
@@ -48,7 +48,7 @@ const Navbar = async () => {
 
           await signIn('github');
           }}>
-            <button type="submit" className='black_btn'>Login</button>
+            <button type="submit" className='rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center'>Login</button>
         </form>
       )}
     </div>
